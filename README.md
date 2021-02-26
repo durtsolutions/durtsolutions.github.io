@@ -4,4 +4,4 @@ By using Github, we also promote learning and options to explore coding / learni
 
 At DURT©, We try to accomodate first the unemployed or lost their jobs due to COVID-19. Priority to those who wanted to excel in life but needs a break a pursue the next steps.
 
-<img src="DurtCut_Green.png" width="750" title="hover text" style="vertical-align:middle">
+<img src="DurtCut_Green.png"  title="hover text">
