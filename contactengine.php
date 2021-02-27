@@ -13,7 +13,7 @@ $Message = Trim(stripslashes($_POST['Message']));
 // validation
 $validationOK=true;
 if (!$validationOK) {
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=index.htm\">";
   exit;
 }
 
@@ -31,6 +31,12 @@ $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $Message;
 $Body .= "\n";
+$Body .= "Mobile: ";
+$Body .= $Mobile;
+$Body .= "\n";
+$Body .= "City: ";
+$Body .= $City;
+$Body .= "\n";
 
 // send email 
 $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
@@ -40,6 +46,6 @@ if ($success){
   print "<meta http-equiv=\"refresh\" content=\"0;URL=index.html\">";
 }
 else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=index.html\">";
 }
 ?>
