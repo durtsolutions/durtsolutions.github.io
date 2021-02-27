@@ -1,19 +1,17 @@
 <?php
 
 $EmailFrom = "chriscoyier@gmail.com";
-$EmailTo = "info.durt@gmail.com";
-$Subject = "Cleaning Inquiry | Route Website";
+$EmailTo = "CHANGE-THIS@YOUR-DOMAIN.com";
+$Subject = "Nice & Simple Contact Form by CSS-Tricks";
 $Name = Trim(stripslashes($_POST['Name'])); 
 $Tel = Trim(stripslashes($_POST['Tel'])); 
 $Email = Trim(stripslashes($_POST['Email'])); 
-$Mobile = Trim(stripslashes($_POST['Mobile'])); 
-$City = Trim(stripslashes($_POST['City'])); 
 $Message = Trim(stripslashes($_POST['Message'])); 
 
 // validation
 $validationOK=true;
 if (!$validationOK) {
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=index.htm\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
   exit;
 }
 
@@ -31,21 +29,15 @@ $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $Message;
 $Body .= "\n";
-$Body .= "Mobile: ";
-$Body .= $Mobile;
-$Body .= "\n";
-$Body .= "City: ";
-$Body .= $City;
-$Body .= "\n";
 
 // send email 
 $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 
 // redirect to success page 
 if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=index.html\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
 }
 else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=index.html\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
 }
 ?>
