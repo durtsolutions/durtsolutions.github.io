@@ -1534,7 +1534,7 @@ background-color: #ffffff;
               padding-top: 50px;
   padding-bottom: 150px;
 background-color: #ffffff;
-background-image: url("https://durtsolutions.com/images/headerhero.jpg");
+background-image: url("https://durtsolutions.com/images/headerhero.webp");
   background-size: cover; 
   background-position: top; 
   background-repeat: no-repeat; 
@@ -1570,11 +1570,13 @@ background-image: url("https://durtsolutions.com/images/headerhero.jpg");
 /*Image*/
 .dorik-image-2eqvywe6 {
               width: 70px; 
+  height: 70px; 
 
         }
     @media screen and (max-width: 767px) {
                 .dorik-image-2eqvywe6 {
               width: 30px; 
+  height: 30px; 
 
         }
     
@@ -3832,6 +3834,7 @@ color: #505056;
 .dorik-image-cqyjbgqj {
               width: 30px; 
   margin-bottom: 5px;
+  height: 30px; 
 
         }
     
